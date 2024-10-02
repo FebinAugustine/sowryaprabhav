@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/home-res.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="hero" id="hero">
+      <div class="bg-image">
+        <img class="" src="./assets/hero_bg.jpg" alt="" />
+      </div>
+      <div class="nav-bar">
+        <img src="./assets/logo_color_new.png" alt="" />
+        <p>SOWRYA PRABHAV</p>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#on-grid">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="ham" onclick="showHtmlDiv()">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1>SOLAR ENERGY</h1>
+        <h3>Best Energy Storage Solution Near You</h3>
+        <a href="#contact"> <button>KNOW MORE</button></a>
+      </div>
+      <div class="mob-menu" id="html-show">
+        <ul>
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#on-grid">On Grid Packages</a>
+          </li>
+          <li>
+            <a href="#off-grid">Gallery</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="privacyPolicy.html">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="about" id="about">
+      <img class="about-bg" src="./assets/aboutus-bg.png"" /> <img
+      class="about-mob-bg" src="./assets/about-mob-bg.png"" />
+      <p>
+        At Sowrya Prabhav, we’re passionate about providing sustainable,
+        eco-friendly energy solutions that are transforming homes and businesses
+        across India. Our mission is to make renewable energy accessible and
+        affordable for everyone by offering top-quality solar products. From
+        solar panels and inverters to batteries and complete solar systems, we
+        offer a wide range of options to meet your energy needs. Every solution
+        we provide is designed to reduce environmental impact, with the goal of
+        bringing green energy into every home.
+      </p>
+    </div>
+
+    <!-- Green Energy Section -->
+
+    <div class="green-energy" id="green-energy">
+      <img class="green-energy-bg" src="./assets/green-energy-bg.png"" /> <img
+      class="green-energy-mob-bg" src="./assets/green-energy-mob-bg.png"" />
+
+      <p>
+        Green energy comes from natural, renewable sources that leave a minimal
+        environmental footprint. Unlike fossil fuels, which release harmful
+        greenhouse gases when burned, green energy is sustainable and generates
+        little to no emissions. Solar power, for instance, captures sunlight
+        using panels or mirrors, offering a clean alternative. As green energy
+        technologies continue to advance, they help reduce our dependence on
+        non-renewable resources, cut down carbon emissions, and play a crucial
+        role in fighting climate change, leading us toward a cleaner, more
+        sustainable future.
+      </p>
+    </div>
+
+    <!-- Why Choose Us Section -->
+
+    <div class="why-choose-us" id="why-choose-us">
+      <img class="why-choose-us-bg" src="./assets/why-choose-us-bg.png"" /> <img
+      class="why-choose-us-mob-bg" src="./assets/why-choose-us-mob-bg.png"" />
+
+      <ul>
+        <li>Get an instant subsidy of over ₹1 lakh</li>
+        <li>Free doorstep delivery, right to your home</li>
+        <li>100% EMI options available for easy payments</li>
+        <li>Enjoy 1 year of complimentary service and warranty assistance</li>
+        <li>
+          Full support with documentation for bank loans and product warranties
+        </li>
+        <li>24/7 customer support at your service</li>
+        <li>Proven success with satisfied customers across India</li>
+        <li>Guaranteed top-quality products, every time</li>
+        <li>
+          Professional service delivered by experts with years of experience
+        </li>
+        <li>Customization options to meet your specific needs</li>
+      </ul>
+    </div>
+
+    <!-- On Grid Packages Section -->
+
+    <div class="ongrid-packages" id="on-grid">
+      <img class="ongrid-packages-bg" src="./assets/ongrid-packages-bg.png" />
+      <img class="ongrid-packages-bg-mob" src="./assets/on-grid-mob-bg.png" />
+
+      <div class="slider">
+        <div class="slide">
+          <img
+            src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-3kw.webp"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-5kw.webp"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-5-3kw.webp"
+            alt="Image 3"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-8kw.webp"
+            alt="Image 4"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-10kw.webp"
+            alt="Image 4"
+          />
+        </div>
+        <div class="dots"></div>
+      </div>
+    </div>
+
+    <!-- Off Grid Packages Section -->
+
+    <div class="off-grid-packages" id="off-grid">
+      <img
+        class="off-grid-packages-bg"
+        src="./assets/offgrid-packages-bg.png"
+      />
+      <img
+        class="off-grid-packages-bg-mob"
+        src="./assets/off-grid-mob-bg.png"
+      />
+      <div class="slider1">
+        <div class="slide1">
+          <img
+            src="./assets/off grid-20241002T094425Z-001/off grid/3-kw-off-grid-grid.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide1">
+          <img
+            src="./assets/off grid-20241002T094425Z-001/off grid/5-kw-off-grid-grid.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide1">
+          <img
+            src="./assets/off grid-20241002T094425Z-001/off grid/8-kw-off-grid-grid.jpg"
+            alt="Image 3"
+          />
+        </div>
+        <div class="slide1">
+          <img
+            src="./assets/off grid-20241002T094425Z-001/off grid/10-kw-off-grid-grid.jpg"
+            alt="Image 4"
+          />
+        </div>
+        <div class="dots1"></div>
+      </div>
+    </div>
+
+    <!-- Contact Us Section -->
+
+    <div class="contact" id="contact">
+      <img class="contact-bg" src="./assets/contact-us-bg.png"" /> <img
+      class="contact-bg-mob" src="./assets/contact-mob-bg.png"" />
+
+      <div class="contact-content">
+        <div class="mob">
+          <img src="./assets/phone-icon.png" alt="" />
+          <p>+91 7593888601</p>
+        </div>
+        <div class="whatsapp">
+          <img src="./assets/whatsapp-icon.png" alt="" />
+          <p>+91 9846123456</p>
+        </div>
+        <div class="email">
+          <img src="./assets/email-icon.png" alt="" />
+          <p>sowryaprabhav@gmail.com</p>
+        </div>
+        <div class="loc">
+          <img src="./assets/loc-icon.png" alt="" />
+          <p>
+            Sathy road, Ganapathy, <br />
+            Coimbatore - 641006
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <div class="footer" id="footer">
+      <img class="footer-bg" src="./assets/footer-bg.png" />
+      <img class="footer-bg-mob" src="./assets/footer-mob-bg.png" />
+
+      <div class="footer-ontent">
+        <div class="footer-col-1">
+          <div class="bottom-logo">
+            <img src="./assets/logo_color_new.png" alt="" />
+            <p>SOWRYA PRABHAV</p>
+          </div>
+          <p>
+            At Sowrya Prabhav, we’re passionate about providing sustainable,
+            eco-friendly energy solutions that are transforming homes and
+            businesses across India.
+          </p>
+        </div>
+        <div class="footer-col-2">
+          <h3>NAVIGATE</h3>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#on-grid">On Grid Packages</a>
+          <a href="#off-grid">Off Grid Packages</a>
+          <a href="#contact">Contact Us</a>
+          <a href="./privacyPolicy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col-3">
+          <h3>SOCIAL</h3>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.youtube.com/">YouTube</a>
+        </div>
+      </div>
+      <div class="copyright">Sowrya Prabhav © Allrights Reserved 2024</div>
+    </div>
+
+    <script>
+      function showHtmlDiv() {
+        var htmlShow = document.getElementById("html-show");
+        if (htmlShow.style.display === "none") {
+          htmlShow.style.display = "block";
+        } else {
+          htmlShow.style.display = "none";
+        }
+      }
+    </script>
+
+    <script>
+      const slider = document.querySelector(".slider");
+      const slides = document.querySelectorAll(".slide");
+      const dotsContainer = document.querySelector(".dots");
+
+      let slideIndex = 0;
+
+      // Create dots
+      for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        dot.setAttribute("data-index", i);
+        dotsContainer.appendChild(dot);
+      }
+
+      // Show initial slide
+      slides[slideIndex].style.display = "block";
+
+      // Add click event to dots
+      const dots = document.querySelectorAll(".dot");
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          slideIndex = dot.getAttribute("data-index");
+          showSlide();
+        });
+      });
+
+      // Auto slide
+      let autoSlideInterval;
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+          slideIndex++;
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          }
+          showSlide();
+        }, 5000); // Adjust the interval as needed
+      }
+
+      function showSlide() {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove("active");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].classList.add("active");
+      }
+
+      startAutoSlide();
+    </script>
+
+    <script>
+      const slider1 = document.querySelector(".slider1");
+      const slides1 = document.querySelectorAll(".slide1");
+      const dotsContainer1 = document.querySelector(".dots1");
+
+      let slideIndex1 = 0;
+
+      // Create dots
+      for (let i = 0; i < slides1.length; i++) {
+        const dot1 = document.createElement("div");
+        dot1.classList.add("dot1");
+        dot1.setAttribute("data-index", i);
+        dotsContainer1.appendChild(dot1);
+      }
+
+      // Show initial slide
+      slides1[slideIndex1].style.display = "block";
+
+      // Add click event to dots
+      const dots1 = document.querySelectorAll(".dot1");
+      dots1.forEach((dot1) => {
+        dot1.addEventListener("click", () => {
+          slideIndex1 = dot1.getAttribute("data-index");
+          showSlide();
+        });
+      });
+
+      // Auto slide
+      let autoSlideInterval1;
+      function startAutoSlide1() {
+        autoSlideInterval1 = setInterval(() => {
+          slideIndex1++;
+          if (slideIndex1 >= slides1.length) {
+            slideIndex1 = 0;
+          }
+          showSlide1();
+        }, 5000); // Adjust the interval as needed
+      }
+
+      function showSlide1() {
+        for (let i = 0; i < slides1.length; i++) {
+          slides1[i].style.display = "none";
+          dots1[i].classList.remove("active1");
+        }
+        slides1[slideIndex1].style.display = "block";
+        dots1[slideIndex1].classList.add("active1");
+      }
+
+      startAutoSlide1();
+    </script>
+  </body>
+</html>
