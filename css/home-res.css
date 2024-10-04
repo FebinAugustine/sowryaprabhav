@@ -1,4 +1,30 @@
 @media only screen and (max-width: 600px) {
+  .getquote img {
+    width: 10vw;
+    height: auto;
+  }
+
+  .chatwithus p {
+    color: #f0f4f1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    text-shadow: 1px 1px 15px rgb(0, 0, 0);
+  }
+
+  .chatwithus img {
+    width: 10vw;
+    height: auto;
+  }
+
+  .getquote p {
+    color: #f0f4f1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    text-shadow: 1px 1px 15px rgb(0, 0, 0);
+  }
+
   .nav-links {
     display: none;
   }
