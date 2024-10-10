@@ -292,6 +292,7 @@ html {
   width: 100%;
   height: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .ongrid-packages-bg {
@@ -307,6 +308,7 @@ html {
   width: 100%;
   height: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .off-grid-packages-bg-mob {
@@ -573,26 +575,42 @@ html {
 
 /* Slider */
 .slider {
+  overflow: hidden;
   position: absolute;
   top: 21vw;
-  left: 59vw;
-  width: 30vw;
+  left: 55vw;
+  width: 35vw;
   height: 30vw;
   overflow: hidden;
 }
 
 .slide {
+  overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
   transition: all 0.8s ease-in-out;
-  box-shadow: 5px;
 }
 
 .slide img {
-  width: 28vw;
-  height: 28vw;
+  width: 26vw;
+  height: auto;
   border-radius: 10px;
+  margin-left: 4.5vw;
+}
+
+.price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6vw;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.1vw;
+  color: #e4e7e4;
 }
 
 .dots {
@@ -616,6 +634,27 @@ html {
   z-index: 100;
 }
 
+.arrows {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  margin-left: 0px;
+}
+
+.prev-arrow,
+.next-arrow {
+  overflow: hidden;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2vw;
+  color: #fff;
+}
+
 .active {
   background-color: #f4f7f4;
   width: 11px;
@@ -627,8 +666,8 @@ html {
 .slider1 {
   position: absolute;
   top: 21vw;
-  left: 59vw;
-  width: 30vw;
+  left: 55vw;
+  width: 35vw;
   height: 30vw;
   overflow: hidden;
 }
@@ -638,13 +677,36 @@ html {
   width: 100%;
   height: 100%;
   transition: all 0.8s ease-in-out;
-  box-shadow: 5px;
+
+  overflow: hidden;
 }
 
 .slide1 img {
-  width: 28vw;
-  height: 28vw;
+  width: 26vw;
+  height: auto;
   border-radius: 10px;
+  margin-left: 4.5vw;
+}
+
+.arrows1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.prev-arrow1,
+.next-arrow1 {
+  overflow: hidden;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2vw;
+  color: #fff;
 }
 
 .dots1 {

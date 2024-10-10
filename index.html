@@ -157,32 +157,71 @@
             src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-3kw.webp"
             alt="Image 1"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">2,25,000</span>
+            </p>
+            <p><b>Our Price : </b> 1,50,000</p>
+          </div>
         </div>
         <div class="slide">
           <img
             src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-5kw.webp"
             alt="Image 2"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">3,35,000</span>
+            </p>
+            <p><b>Our Price :</b>2,25,000</p>
+          </div>
         </div>
         <div class="slide">
           <img
             src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-5-3kw.webp"
             alt="Image 3"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">2,75,000</span>
+            </p>
+            <p><b>Our Price : </b>1,75,000</p>
+          </div>
         </div>
         <div class="slide">
           <img
             src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-8kw.webp"
             alt="Image 4"
           />
+          <div class="price">
+            <p>
+              <b>MarketnPrice : </b>
+              <span style="text-decoration: line-through">4,97,000</span>
+            </p>
+            <p><b>Our Price : </b>3,40,000</p>
+          </div>
         </div>
         <div class="slide">
           <img
             src="./assets/on grid-20241002T094256Z-001/on grid/on-grid-10kw.webp"
             alt="Image 4"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">6,00,000</span>
+            </p>
+            <p><b>Our Price : </b>4,00,000</p>
+          </div>
         </div>
         <div class="dots"></div>
+        <div class="arrows">
+          <button class="prev-arrow">&#10096;</button>
+          <button class="next-arrow">&#10097;</button>
+        </div>
       </div>
     </div>
 
@@ -211,26 +250,58 @@
             src="./assets/off grid-20241002T094425Z-001/off grid/3-kw-off-grid-grid.jpg"
             alt="Image 1"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">6,00,000</span>
+            </p>
+            <p><b>Our Price : </b>4,00,000</p>
+          </div>
         </div>
         <div class="slide1">
           <img
             src="./assets/off grid-20241002T094425Z-001/off grid/5-kw-off-grid-grid.jpg"
             alt="Image 2"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">6,00,000</span>
+            </p>
+            <p><b>Our Price : </b>4,00,000</p>
+          </div>
         </div>
         <div class="slide1">
           <img
             src="./assets/off grid-20241002T094425Z-001/off grid/8-kw-off-grid-grid.jpg"
             alt="Image 3"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">6,00,000</span>
+            </p>
+            <p><b>Our Price : </b>4,00,000</p>
+          </div>
         </div>
         <div class="slide1">
           <img
             src="./assets/off grid-20241002T094425Z-001/off grid/10-kw-off-grid-grid.jpg"
             alt="Image 4"
           />
+          <div class="price">
+            <p>
+              <b>Market Price : </b>
+              <span style="text-decoration: line-through">6,00,000</span>
+            </p>
+            <p><b>Our Price : </b>4,00,000</p>
+          </div>
         </div>
         <div class="dots1"></div>
+        <div class="arrows1">
+          <button class="prev-arrow1">&#10096;</button>
+          <button class="next-arrow1">&#10097;</button>
+        </div>
       </div>
     </div>
 
@@ -326,10 +397,14 @@
       }
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
     <script>
       const slider = document.querySelector(".slider");
       const slides = document.querySelectorAll(".slide");
       const dotsContainer = document.querySelector(".dots");
+      const prevArrow = document.querySelector(".prev-arrow");
+      const nextArrow = document.querySelector(".next-arrow");
 
       let slideIndex = 0;
 
@@ -374,13 +449,50 @@
         dots[slideIndex].classList.add("active");
       }
 
+      // Add swipe gesture support using Hammer.js
+      const hammer = new Hammer(slider);
+      hammer.on("swipeleft", () => {
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+        showSlide();
+      });
+      hammer.on("swiperight", () => {
+        slideIndex--;
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+        showSlide();
+      });
+
+      // Add click event to arrows
+      prevArrow.addEventListener("click", () => {
+        slideIndex--;
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+        showSlide();
+      });
+
+      nextArrow.addEventListener("click", () => {
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+        showSlide();
+      });
+
       startAutoSlide();
     </script>
-    <!--SLIDER SCRIPT-->
+
+    <!--SLIDER 2 SCRIPT-->
     <script>
       const slider1 = document.querySelector(".slider1");
       const slides1 = document.querySelectorAll(".slide1");
       const dotsContainer1 = document.querySelector(".dots1");
+      const prevArrow1 = document.querySelector(".prev-arrow1");
+      const nextArrow1 = document.querySelector(".next-arrow1");
 
       let slideIndex1 = 0;
 
@@ -400,7 +512,7 @@
       dots1.forEach((dot1) => {
         dot1.addEventListener("click", () => {
           slideIndex1 = dot1.getAttribute("data-index");
-          showSlide();
+          showSlide1();
         });
       });
 
@@ -424,6 +536,40 @@
         slides1[slideIndex1].style.display = "block";
         dots1[slideIndex1].classList.add("active1");
       }
+
+      // Add swipe gesture support using Hammer.js
+      const hammer1 = new Hammer(slider1);
+      hammer1.on("swipeleft", () => {
+        slideIndex1++;
+        if (slideIndex1 >= slides1.length) {
+          slideIndex1 = 0;
+        }
+        showSlide1();
+      });
+      hammer1.on("swiperight", () => {
+        slideIndex1--;
+        if (slideIndex1 < 0) {
+          slideIndex1 = slides1.length - 1;
+        }
+        showSlide1();
+      });
+
+      // Add click event to arrows
+      prevArrow1.addEventListener("click", () => {
+        slideIndex1--;
+        if (slideIndex1 < 0) {
+          slideIndex1 = slides1.length - 1;
+        }
+        showSlide();
+      });
+
+      nextArrow1.addEventListener("click", () => {
+        slideIndex1++;
+        if (slideIndex1 >= slides1.length) {
+          slideIndex1 = 0;
+        }
+        showSlide1();
+      });
 
       startAutoSlide1();
     </script>
