@@ -351,9 +351,9 @@
   .slider {
     position: absolute;
     top: 132vw;
-    left: 15vw;
+    left: 8vw;
     width: 90vw;
-    height: 90vw;
+    height: 93vw;
     overflow: hidden;
   }
 
@@ -364,24 +364,37 @@
   }
 
   .price {
+    width: 76%;
     flex-direction: column;
     align-items: center;
-    margin-left: -32px;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 3.5vw;
+  }
+  .subsidyprice {
+    width: 75%;
+  }
+  .subsidyprice p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3.8vw;
   }
 
   .dots {
     bottom: 2px;
-    left: 40%;
+    left: 42%;
+  }
+
+  .dot {
+    width: 2vw;
+    height: 2vw;
   }
 
   .slider1 {
     position: absolute;
     top: 132vw;
-    left: 15vw;
+    left: 8vw;
     width: 90vw;
-    height: 90vw;
+    height: 93vw;
 
     overflow: hidden;
   }
@@ -394,7 +407,11 @@
 
   .dots1 {
     bottom: 2px;
-    left: 40%;
+    left: 42%;
+  }
+  .dot1 {
+    width: 2vw;
+    height: 2vw;
   }
 
   .arrows1,
