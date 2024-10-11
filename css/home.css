@@ -616,10 +616,13 @@ html {
   font-size: 1vw;
   color: #022f02;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 10px;
   padding-top: 5px;
 }
 
+.ourprice {
+  color: #eeff00;
+}
 .subsidyprice {
   background-color: #036203;
   color: #fff;
@@ -686,10 +689,10 @@ html {
 /* Slider */
 .slider1 {
   position: absolute;
-  top: 20.5vw;
+  top: 19vw;
   left: 55vw;
   width: 35vw;
-  height: 31.5vw;
+  height: 32.5vw;
   overflow: hidden;
 }
 
@@ -700,6 +703,18 @@ html {
   transition: all 0.8s ease-in-out;
 
   overflow: hidden;
+}
+
+.note {
+  width: 100%;
+}
+
+.note p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.8vw;
+  color: rgb(231, 233, 234);
 }
 
 .slide1 img {
@@ -733,7 +748,7 @@ html {
 .dots1 {
   z-index: 100;
   position: absolute;
-  bottom: 7px;
+  bottom: 0px;
 
   left: 50%;
   transform: translateX(-50%);

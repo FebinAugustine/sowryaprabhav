@@ -350,7 +350,7 @@
 
   .slider {
     position: absolute;
-    top: 132vw;
+    top: 130vw;
     left: 8vw;
     width: 90vw;
     height: 93vw;
@@ -391,10 +391,10 @@
 
   .slider1 {
     position: absolute;
-    top: 132vw;
+    top: 125vw;
     left: 8vw;
     width: 90vw;
-    height: 93vw;
+    height: 96vw;
 
     overflow: hidden;
   }
@@ -403,6 +403,11 @@
     width: 70vw;
     height: auto;
     border-radius: 10px;
+  }
+
+  .note p {
+    font-size: 3vw;
+    margin-left: -15vw;
   }
 
   .dots1 {
