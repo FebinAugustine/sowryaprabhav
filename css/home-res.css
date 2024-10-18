@@ -394,7 +394,7 @@
     top: 125vw;
     left: 8vw;
     width: 90vw;
-    height: 96vw;
+    height: 98vw;
 
     overflow: hidden;
   }
@@ -406,12 +406,14 @@
   }
 
   .note p {
-    font-size: 3vw;
-    margin-left: -15vw;
+    text-align: center;
+    max-width: 70vw;
+    font-size: 2.6vw;
+    margin-left: 5vw;
   }
 
   .dots1 {
-    bottom: 2px;
+    bottom: 0px;
     left: 42%;
   }
   .dot1 {
